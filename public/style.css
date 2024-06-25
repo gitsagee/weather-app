@@ -1,0 +1,166 @@
+/* Variables for consistent color scheme */
+:root {
+    --primary-color: #3498db;
+    --background-color: #ecf0f1;
+    --text-color: #555;
+}
+
+/* Resetting default margin and padding for better consistency */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Header styling */
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main content container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+   
+    min-height: 80vh;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+/* Search container styling */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+/* Search input styling */
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Search button styling with transition */
+.search-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+/* Darker shade on button hover */
+.search-button:hover {
+    background-color: #2980b9;
+}
+
+/* Weather container styling */
+.weather-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+.main{
+    margin : 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Weather icon styling */
+.weather-icon img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 15px;
+
+}
+.weather-icon{
+    display: grid;
+    align-items: center;
+}
+
+/* Weather information styling */
+.weather-info {
+    display: grid;
+    align-items: center;
+    margin: 0 50px;
+}
+
+/* Temperature styling */
+.temperature {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Condition and city name styling */
+.condition, .cityname {
+    font-size: 18px;
+    margin: 0;
+    color: var(--text-color);
+}
+.more-info {
+    font-size: 18px;
+    margin: 0;
+    color: var(--text-color);
+    di
+}
+
+/* Footer styling */
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-top: 43.5px; /* Ensure consistent units (px, rem, em, etc.) */
+}
+
+/* Animation for weather icon */
+@keyframes growShrink {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+/* Apply animation to weather icon */
+#weatherIcon {
+    animation: growShrink 2s linear infinite;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 20px;
+    }
+
+    .weather-container {
+        flex-direction: column;
+    }
+}

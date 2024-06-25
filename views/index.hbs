@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            Weather
+        </div>
+    </header>
+
+    <main class="main-container">
+        <form class="search-container" id="searchForm">
+
+
+            <input type="text" placeholder="Enter location" class="search-input">
+            <button class="search-button">Search</button>
+
+        </form>
+
+        <div class="weather-container">
+            <div class="main">
+                <div class="weather-icon">
+                   
+                    <img id="weatherIcon" src="./sun.png" alt="Weather Icon">
+                </div>
+                <div class="weather-info">
+                    <h1 class="temperature">25°C</h1>
+                    <p class="condition">Sunny</p>
+                    <p class="cityname">Delhi , IN</p>
+                </div>
+                <div class="more-info">
+                    <p class="moreInfo"></p>
+                    <p class="minTemp"></p>
+                    <p class="maxTemp"></p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        Weather App &copy; 2024
+    </footer>
+</body>
+
+</html>
