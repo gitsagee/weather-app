@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 
 app.set("views", path.join(__dirname, "..", "views"));
